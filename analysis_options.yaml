@@ -1,0 +1,16 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    # This Flutter SDK ships Material via package:material_ui and marks the
+    # flutter/material re-export deprecated. The app intentionally uses the
+    # classic import, so keep it as a hint rather than noise.
+    deprecated_member_use: ignore
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+
+linter:
+  rules:
+    prefer_single_quotes: true
